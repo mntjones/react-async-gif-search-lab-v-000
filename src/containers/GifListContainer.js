@@ -10,11 +10,15 @@ export default class GifListContainer extends React.Component {
     }
   }
 
-  getGifs = event => {
-    event.preventDefault
-    let query =
-    fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g`)
-  }
+  getGifs = (data) => {
+    fetch(`http://api.giphy.com/v1/gifs/search?q=${data.search}&api_key=dc6zaTOxFJmzC&rating=g`)
+      .then(res => res.json())
+      .then(json => {
+          const array = json.data.slice(0, 3)
+          this.setState({topThree: array})
+        }
+      )
+    }
 
   render(){
     return (
