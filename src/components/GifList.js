@@ -9,7 +9,7 @@ export default class GifList extends React.Component {
             return (
               <ul>
                 <li>
-                  <img key={gif.images.original.url} src={gif.images.original.url } />
+                  <img key={gif.images.original.url} src={gif.images.original.url } alt="something"/>
                 </li>
               </ul>)
             })}
