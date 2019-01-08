@@ -9,7 +9,7 @@ export default class GifSearch extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
     this.props.onSubmit(this.state)
   }
 
