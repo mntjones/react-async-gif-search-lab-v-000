@@ -6,7 +6,7 @@ export default class GifListContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      topThree: [];
+      topThree: [],
     }
   }
 
