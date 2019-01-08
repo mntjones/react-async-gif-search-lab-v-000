@@ -4,7 +4,7 @@ export default class GifSearch extends React.Component {
   constructor() {
     super();
     this.state= {
-      search:  "";
+      search:  "",
     }
   }
 
